@@ -1,0 +1,523 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\HP> cd download
+cd : Cannot find path 'C:\Users\HP\download' because it does not exist.
+At line:1 char:1
++ cd download
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\HP\download:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\HP> ls
+
+
+    Directory: C:\Users\HP
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        3/28/2021   5:55 PM                .android
+d-----        3/27/2021   1:51 PM                .conda
+d-----        3/25/2021   3:52 PM                .config
+d-----        3/27/2021  12:56 AM                .idlerc
+d-----         4/3/2021   8:38 PM                .ipynb_checkpoints
+d-----        3/24/2021   8:57 PM                .ipython
+d-----        3/26/2021  12:04 AM                .jupyter
+d-----        3/28/2021   5:01 PM                .vscode
+d-r---        3/25/2021   8:38 PM                3D Objects
+d-r---        3/25/2021   8:38 PM                Contacts
+d-r---        3/31/2021  10:58 AM                Desktop
+d-r---         4/5/2021   8:47 PM                Documents
+d-r---         4/6/2021  12:58 AM                Downloads
+d-----        3/25/2021   3:31 AM                DroidCam
+d-r---        3/31/2021  10:58 AM                Favorites
+d-----        3/28/2021  11:40 PM                HARRY
+d-r---        3/31/2021  10:58 AM                Links
+d-r---        3/31/2021  10:58 AM                Music
+d-----        3/27/2021   5:58 AM                Nox_share
+dar--l         4/6/2021  12:53 AM                OneDrive
+d-r---        3/31/2021  10:58 AM                Pictures
+d-----         4/5/2021   8:58 PM                Praxis
+d-r---        3/31/2021  10:58 AM                Saved Games
+d-r---        3/25/2021   8:38 PM                Searches
+d-r---        3/31/2021  10:58 AM                Videos
+d-----        3/28/2021   5:55 PM                vmlogs
+-a----        3/25/2021   3:55 PM             90 .angular-config.json
+-a----        3/25/2021   3:54 AM             43 .condarc
+-a----        3/29/2021  12:02 AM             56 .node_repl_history
+-a----         4/3/2021   8:38 PM           3792 alpro 2.ipynb
+-a----        3/28/2021   5:55 PM            298 d4ac4633ebd6440fa397b84f1bc94a3c.7z
+-a----        3/27/2021   5:58 AM             66 inittk.ini
+-a----        3/27/2021   5:57 AM             41 inst.ini
+-a----        3/27/2021   5:07 PM           2370 Jangan lupa di Rename yak.ipynb
+-a----        3/27/2021   5:57 AM             45 nuuid.ini
+-a----        3/24/2021   8:59 PM            555 Untitled.ipynb
+-a----        3/26/2021  12:10 AM            839 Untitled1.ipynb
+-a----        3/27/2021   1:35 PM            581 Untitled2.ipynb
+-a----         4/3/2021   4:40 PM           4910 Untitled3.ipynb
+-a----        3/27/2021   5:57 AM             53 useruid.ini
+
+
+PS C:\Users\HP> cd downloads
+PS C:\Users\HP\downloads> date
+
+Tuesday, April 6, 2021 1:04:31 AM
+
+
+PS C:\Users\HP\downloads> dir
+
+
+    Directory: C:\Users\HP\downloads
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         4/5/2021  11:36 PM                praxis-academy-1b67babf44a659dcee8cbdd08514d62c1632ea9e
+d-----         4/5/2021   7:23 PM                Telegram Desktop
+-a----        3/26/2021   1:51 PM         668120 1800016055-F.pdf
+-a----        3/29/2021   2:27 PM         126001 1800016143_Statprob_C_4.pdf
+-a----         4/4/2021  11:47 PM         611027 1910301125 Luthfi Anggia TUGAS MODUL KESEHATAN WANITA.pdf
+-a----        3/30/2021  12:51 AM          29145 1910301153 Nurul Ummil Ha.docx
+-a----         4/3/2021   8:37 PM           3792 alpro 2.ipynb
+-a----        3/29/2021   2:10 PM         476736 C-2-1800016143-Harry Juliansy Fikri Semendawai.pdf
+-a----         4/2/2021   8:57 PM         154760 CV HARRY JFS.docx
+-a----        3/25/2021  12:19 AM         165144 CV robi.docx
+-a----        3/26/2021   7:23 PM         786842 LAPRAK SP.docx
+-a----        3/24/2021  10:50 PM         100175 PicsArt_06-20-02.45.46.jpg
+-a----         4/6/2021  12:57 AM         121977 praxis-academy-1b67babf44a659dcee8cbdd08514d62c1632ea9e.zip
+-a----         4/2/2021   8:54 PM          62837 Praxis-magang-maret (1).pdf
+-a----         4/2/2021   8:51 PM          43821 Praxis-magang-maret.pdf
+-a----        3/30/2021  12:51 AM         143719 PR_Gafrit Khair Triaji_1910301095_4B3-dikonversi.docx
+-a----        3/25/2021   2:27 AM        2210715 pubg-girl-helmet-rifle-uhdpaper.com-4K-5.1748.jpg
+-a----        3/25/2021  12:44 AM         314664 Template Tugas APB 2021.docx
+-a----        3/24/2021   9:46 PM        3324304 winrar-x64-600.exe
+
+
+PS C:\Users\HP\downloads> help
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts.
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete.
+
+    Without help files, Get-Help displays auto-generated help for cmdlets,
+    functions, and scripts.
+
+
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+
+    For more information about the Update-Help cmdlet, type:
+
+       Get-Help Update-Help -Online
+
+    or go to: http://go.microsoft.com/fwlink/?LinkID=210614
+PS C:\Users\HP\downloads> hostname
+LAPTOP-G1EOU4SR
+PS C:\Users\HP\downloads> ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::c065:592d:58ff:7df2%15
+   IPv4 Address. . . . . . . . . . . : 192.168.100.172
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.100.1
+PS C:\Users\HP\downloads> mkdir
+
+cmdlet mkdir at command pipeline position 1
+Supply values for the following parameters:
+Path[0]:
+mkdir : Cannot bind argument to parameter 'Path' because it is an empty array.
+At line:1 char:1
++ mkdir
++ ~~~~~
+    + CategoryInfo          : InvalidData: (:) [mkdir], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyArrayNotAllowed,mkdir
+
+PS C:\Users\HP\downloads> mkdir
+
+cmdlet mkdir at command pipeline position 1
+Supply values for the following parameters:
+Path[0]:
+PS C:\Users\HP\downloads> netsh
+netsh>100.100.0.1
+The following command was not found: 100.100.0.1.
+netsh>ping 192.168.1.1
+The following command was not found: ping 192.168.1.1.
+netsh>
+netsh>
+PS C:\Users\HP\downloads> ping 192.168.100.1
+
+Pinging 192.168.100.1 with 32 bytes of data:
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+
+Ping statistics for 192.168.100.1:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+PS C:\Users\HP\downloads> rmdir
+
+cmdlet Remove-Item at command pipeline position 1
+Supply values for the following parameters:
+Path[0]:
+Remove-Item : Cannot bind argument to parameter 'Path' because it is an empty array.
+At line:1 char:1
++ rmdir
++ ~~~~~
+    + CategoryInfo          : InvalidData: (:) [Remove-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyArrayNotAllowed,Microsoft.PowerShell.Commands.Remov
+   eItemCommand
+
+PS C:\Users\HP\downloads> $location = Get-Location
+PS C:\Users\HP\downloads> $location | Get-Member
+
+
+   TypeName: System.Management.Automation.PathInfo
+
+Name         MemberType Definition
+----         ---------- ----------
+Equals       Method     bool Equals(System.Object obj)
+GetHashCode  Method     int GetHashCode()
+GetType      Method     type GetType()
+ToString     Method     string ToString()
+Drive        Property   System.Management.Automation.PSDriveInfo Drive {get;}
+Path         Property   string Path {get;}
+Provider     Property   System.Management.Automation.ProviderInfo Provider {get;}
+ProviderPath Property   string ProviderPath {get;}
+
+
+PS C:\Users\HP\downloads> tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        100 K
+Registry                        96 Services                   0     82.924 K
+smss.exe                       376 Services                   0      1.052 K
+csrss.exe                      772 Services                   0      5.296 K
+wininit.exe                    892 Services                   0      6.516 K
+services.exe                   276 Services                   0      9.088 K
+lsass.exe                      404 Services                   0     17.240 K
+svchost.exe                   1044 Services                   0      3.336 K
+fontdrvhost.exe               1072 Services                   0      2.152 K
+svchost.exe                   1092 Services                   0     31.720 K
+svchost.exe                   1184 Services                   0     18.064 K
+svchost.exe                   1244 Services                   0      8.204 K
+svchost.exe                   1444 Services                   0     10.128 K
+svchost.exe                   1516 Services                   0      5.324 K
+svchost.exe                   1524 Services                   0     14.716 K
+svchost.exe                   1532 Services                   0     11.280 K
+svchost.exe                   1576 Services                   0     11.480 K
+svchost.exe                   1668 Services                   0      8.096 K
+svchost.exe                   1764 Services                   0     16.392 K
+svchost.exe                   1812 Services                   0     10.224 K
+svchost.exe                   1828 Services                   0      6.184 K
+svchost.exe                   1968 Services                   0      8.540 K
+svchost.exe                    796 Services                   0     14.764 K
+svchost.exe                     68 Services                   0      7.660 K
+svchost.exe                   1416 Services                   0     10.520 K
+svchost.exe                   1500 Services                   0      9.860 K
+AppHelperCap.exe              2056 Services                   0     16.776 K
+SysInfoCap.exe                2068 Services                   0     20.484 K
+NetworkCap.exe                2076 Services                   0     10.160 K
+TouchpointAnalyticsClient     2092 Services                   0     53.980 K
+svchost.exe                   2260 Services                   0     13.492 K
+svchost.exe                   2268 Services                   0     12.268 K
+svchost.exe                   2376 Services                   0      8.312 K
+svchost.exe                   2448 Services                   0      8.688 K
+svchost.exe                   2504 Services                   0     17.976 K
+svchost.exe                   2592 Services                   0     17.364 K
+svchost.exe                   2652 Services                   0      6.928 K
+amdfendrsr.exe                2812 Services                   0      6.384 K
+atiesrxx.exe                  2820 Services                   0      5.276 K
+svchost.exe                   2956 Services                   0      5.076 K
+svchost.exe                   2964 Services                   0     12.784 K
+svchost.exe                   2972 Services                   0      7.916 K
+svchost.exe                   3044 Services                   0      7.052 K
+svchost.exe                   3052 Services                   0      7.152 K
+Memory Compression            3068 Services                   0     88.032 K
+svchost.exe                   3284 Services                   0     20.588 K
+svchost.exe                   3576 Services                   0      7.112 K
+WmiPrvSE.exe                  3608 Services                   0     14.164 K
+unsecapp.exe                  3804 Services                   0      7.024 K
+WmiPrvSE.exe                  3936 Services                   0      8.960 K
+svchost.exe                   3996 Services                   0      6.872 K
+svchost.exe                   4176 Services                   0     13.540 K
+svchost.exe                   4412 Services                   0     17.012 K
+svchost.exe                   4532 Services                   0     12.948 K
+svchost.exe                   4640 Services                   0      5.904 K
+svchost.exe                   4652 Services                   0      9.080 K
+svchost.exe                   4880 Services                   0      8.004 K
+svchost.exe                   5044 Services                   0     16.812 K
+spoolsv.exe                   3520 Services                   0     12.140 K
+svchost.exe                   4104 Services                   0      8.708 K
+svchost.exe                   4400 Services                   0     20.188 K
+svchost.exe                   4516 Services                   0      6.928 K
+armsvc.exe                    5664 Services                   0      4.820 K
+svchost.exe                   5672 Services                   0     26.784 K
+svchost.exe                   5684 Services                   0     26.352 K
+OfficeClickToRun.exe          5696 Services                   0     36.248 K
+ETDService.exe                5704 Services                   0      5.156 K
+svchost.exe                   5716 Services                   0     11.992 K
+svchost.exe                   5804 Services                   0      5.332 K
+RemoteMouseService.exe        5816 Services                   0     13.900 K
+RtkBtManServ.exe              5832 Services                   0      7.068 K
+svchost.exe                   5844 Services                   0      4.996 K
+svchost.exe                   5876 Services                   0     22.980 K
+MsMpEng.exe                   5884 Services                   0    227.572 K
+svchost.exe                   6024 Services                   0      4.540 K
+svchost.exe                   2760 Services                   0     11.112 K
+svchost.exe                   6776 Services                   0      8.736 K
+SearchIndexer.exe             4684 Services                   0     46.552 K
+svchost.exe                   7200 Services                   0      5.900 K
+NisSrv.exe                    6632 Services                   0      9.760 K
+svchost.exe                   8840 Services                   0     10.144 K
+dllhost.exe                   8904 Services                   0     10.988 K
+svchost.exe                   9184 Services                   0      8.592 K
+SecurityHealthService.exe     8344 Services                   0     14.848 K
+svchost.exe                    780 Services                   0      9.480 K
+svchost.exe                  10128 Services                   0      4.800 K
+svchost.exe                   2700 Services                   0     15.260 K
+svchost.exe                   5892 Services                   0     11.144 K
+svchost.exe                   8464 Services                   0     16.172 K
+svchost.exe                   1004 Services                   0     16.308 K
+svchost.exe                   6344 Services                   0     11.200 K
+SgrmBroker.exe                1000 Services                   0      5.648 K
+svchost.exe                  11372 Services                   0     10.452 K
+svchost.exe                   8328 Services                   0      6.980 K
+svchost.exe                  10892 Services                   0      7.856 K
+svchost.exe                   2320 Services                   0     13.264 K
+svchost.exe                  10908 Services                   0     16.304 K
+svchost.exe                  11492 Services                   0      5.860 K
+svchost.exe                   8184 Services                   0      7.424 K
+csrss.exe                    11256 Console                    4      5.452 K
+winlogon.exe                 10884 Console                    4      9.740 K
+fontdrvhost.exe              11072 Console                    4     11.912 K
+dwm.exe                       9452 Console                    4     59.832 K
+atieclxx.exe                  7036 Console                    4     11.344 K
+RemoteMouseCore.exe           9564 Console                    4     23.296 K
+RemoteMouse.exe              10012 Console                    4     36.572 K
+ETDCtrl.exe                   5980 Console                    4     13.352 K
+sihost.exe                    1932 Console                    4     29.640 K
+svchost.exe                  10252 Console                    4     29.164 K
+svchost.exe                   3492 Console                    4     34.884 K
+taskhostw.exe                 1120 Console                    4     16.992 K
+explorer.exe                 12600 Console                    4    136.116 K
+svchost.exe                  10040 Console                    4     21.768 K
+StartMenuExperienceHost.e    11228 Console                    4     64.408 K
+RuntimeBroker.exe             6980 Console                    4     25.056 K
+SearchUI.exe                  3440 Console                    4    196.624 K
+RuntimeBroker.exe            11248 Console                    4     38.104 K
+ctfmon.exe                    3348 Console                    4     13.788 K
+SettingSyncHost.exe          10392 Console                    4     15.308 K
+YourPhone.exe                11400 Console                    4     10.704 K
+LockApp.exe                   8040 Console                    4     47.548 K
+RuntimeBroker.exe            10916 Console                    4     31.708 K
+RuntimeBroker.exe             2728 Console                    4     11.968 K
+RuntimeBroker.exe             8456 Console                    4     22.116 K
+SecurityHealthSystray.exe     5528 Console                    4      8.544 K
+smartscreen.exe              10528 Console                    4     25.668 K
+RtkAudUService64.exe          7428 Console                    4     10.148 K
+OneDrive.exe                 11308 Console                    4     51.324 K
+WhatsApp.exe                  4216 Console                    4    108.612 K
+WhatsApp.exe                 11956 Console                    4    120.272 K
+WhatsApp.exe                 11052 Console                    4     24.596 K
+WhatsApp.exe                 12408 Console                    4     12.600 K
+WhatsApp.exe                  6448 Console                    4    149.424 K
+Skype.exe                     1664 Console                    4     69.800 K
+Skype.exe                    13712 Console                    4     14.264 K
+Skype.exe                    14076 Console                    4     52.308 K
+Skype.exe                     8916 Console                    4     23.064 K
+Skype.exe                      240 Console                    4     93.564 K
+WhatsApp.exe                  1940 Console                    4     73.592 K
+WhatsApp.exe                 13272 Console                    4     18.932 K
+InputPersonalization.exe      2064 Console                    4     20.896 K
+CCXProcess.exe                3300 Console                    4      2.236 K
+node.exe                     13556 Console                    4     73.788 K
+conhost.exe                  12236 Console                    4     10.972 K
+RadeonSoftware.exe           13764 Console                    4     55.824 K
+AdobeIPCBroker.exe            9064 Console                    4      9.908 K
+svchost.exe                   3976 Console                    4     23.652 K
+AMDRSServ.exe                 5932 Console                    4      3.188 K
+chrome.exe                   14000 Console                    4    134.684 K
+chrome.exe                   12512 Console                    4      7.100 K
+chrome.exe                    8396 Console                    4    117.776 K
+chrome.exe                    7160 Console                    4     33.668 K
+chrome.exe                   11096 Console                    4     17.368 K
+chrome.exe                   11196 Console                    4     84.864 K
+HPSystemEventUtilityHost.    11728 Console                    4     78.996 K
+ApplicationFrameHost.exe      3592 Console                    4     32.388 K
+SystemSettings.exe           10088 Console                    4      2.048 K
+UserOOBEBroker.exe            3984 Console                    4      8.292 K
+BridgeCommunication.exe       7736 Console                    4     24.684 K
+HP.JumpStarts.exe            10588 Console                    4      3.796 K
+RuntimeBroker.exe             9864 Console                    4      7.708 K
+MicrosoftEdge.exe            12080 Console                    4     10.188 K
+browser_broker.exe           10100 Console                    4      8.232 K
+RuntimeBroker.exe             2732 Console                    4      7.508 K
+MicrosoftEdgeSH.exe          10872 Console                    4      8.752 K
+MicrosoftEdgeCP.exe          11504 Console                    4     25.716 K
+WinStore.App.exe             10420 Console                    4      3.944 K
+RuntimeBroker.exe             5068 Console                    4      9.720 K
+chrome.exe                    5144 Console                    4     16.376 K
+WWAHost.exe                  12648 Console                    4    115.712 K
+RuntimeBroker.exe            12024 Console                    4     22.760 K
+chrome.exe                   10260 Console                    4     73.804 K
+chrome.exe                    6772 Console                    4     21.428 K
+svchost.exe                  12804 Services                   0      5.592 K
+notepad.exe                  12584 Console                    4     17.296 K
+dllhost.exe                   8536 Console                    4     11.788 K
+powershell.exe                1656 Console                    4     77.068 K
+conhost.exe                   6912 Console                    4     15.888 K
+powershell.exe                2128 Console                    4     71.040 K
+conhost.exe                   5760 Console                    4     15.788 K
+svchost.exe                  10268 Services                   0      6.940 K
+tasklist.exe                 10980 Console                    4      8.380 K
+PS C:\Users\HP\downloads> dir
+
+
+    Directory: C:\Users\HP\downloads
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         4/5/2021  11:36 PM                praxis-academy-1b67babf44a659dcee8cbdd08514d62c1632ea9e
+d-----         4/5/2021   7:23 PM                Telegram Desktop
+-a----        3/26/2021   1:51 PM         668120 1800016055-F.pdf
+-a----        3/29/2021   2:27 PM         126001 1800016143_Statprob_C_4.pdf
+-a----         4/4/2021  11:47 PM         611027 1910301125 Luthfi Anggia TUGAS MODUL KESEHATAN WANITA.pdf
+-a----        3/30/2021  12:51 AM          29145 1910301153 Nurul Ummil Ha.docx
+-a----         4/3/2021   8:37 PM           3792 alpro 2.ipynb
+-a----        3/29/2021   2:10 PM         476736 C-2-1800016143-Harry Juliansy Fikri Semendawai.pdf
+-a----         4/2/2021   8:57 PM         154760 CV HARRY JFS.docx
+-a----        3/25/2021  12:19 AM         165144 CV robi.docx
+-a----        3/26/2021   7:23 PM         786842 LAPRAK SP.docx
+-a----        3/24/2021  10:50 PM         100175 PicsArt_06-20-02.45.46.jpg
+-a----         4/6/2021  12:57 AM         121977 praxis-academy-1b67babf44a659dcee8cbdd08514d62c1632ea9e.zip
+-a----         4/2/2021   8:54 PM          62837 Praxis-magang-maret (1).pdf
+-a----         4/2/2021   8:51 PM          43821 Praxis-magang-maret.pdf
+-a----        3/30/2021  12:51 AM         143719 PR_Gafrit Khair Triaji_1910301095_4B3-dikonversi.docx
+-a----        3/25/2021   2:27 AM        2210715 pubg-girl-helmet-rifle-uhdpaper.com-4K-5.1748.jpg
+-a----        3/25/2021  12:44 AM         314664 Template Tugas APB 2021.docx
+-a----        3/24/2021   9:46 PM        3324304 winrar-x64-600.exe
+
+
+PS C:\Users\HP\downloads> whoami
+laptop-g1eou4sr\hp
+PS C:\Users\HP\downloads> where
+
+cmdlet Where-Object at command pipeline position 1
+Supply values for the following parameters:
+Property:
+PS C:\Users\HP\downloads> sc config
+
+cmdlet Set-Content at command pipeline position 1
+Supply values for the following parameters:
+Value[0]: sc config
+Value[1]:
+PS C:\Users\HP\downloads> netcfg
+PS C:\Users\HP\downloads> netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+PS C:\Users\HP\downloads> netcfg
+PS C:\Users\HP\downloads> netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    192.168.100.172:51892  253:https              ESTABLISHED
+  TCP    192.168.100.172:51893  1drv:https             ESTABLISHED
+  TCP    192.168.100.172:51894  1drv:https             TIME_WAIT
+  TCP    192.168.100.172:51895  203:https              ESTABLISHED
+  TCP    192.168.100.172:51896  sb-in-f188:https       ESTABLISHED
+PS C:\Users\HP\downloads> ftp status
+Unknown host status.
+ftp> ftp ls
+Invalid command.
+ftp> ls
+Not connected.
+ftp> quit
+PS C:\Users\HP\downloads> chdir
+PS C:\Users\HP\downloads> at
+The AT command has been deprecated. Please use schtasks.exe instead.
+
+The request is not supported.
+PS C:\Users\HP\downloads> cscript
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Usage: CScript scriptname.extension [option...] [arguments...]
+
+Options:
+ //B         Batch mode: Suppresses script errors and prompts from displaying
+ //D         Enable Active Debugging
+ //E:engine  Use engine for executing script
+ //H:CScript Changes the default script host to CScript.exe
+ //H:WScript Changes the default script host to WScript.exe (default)
+ //I         Interactive mode (default, opposite of //B)
+ //Job:xxxx  Execute a WSF job
+ //Logo      Display logo (default)
+ //Nologo    Prevent logo display: No banner will be shown at execution time
+ //S         Save current command line options for this user
+ //T:nn      Time out in seconds:  Maximum time a script is permitted to run
+ //X         Execute script in debugger
+ //U         Use Unicode for redirected I/O from the console
+PS C:\Users\HP\downloads>
+
